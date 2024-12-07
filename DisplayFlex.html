@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex in CSS</title>
+    <style>
+        .main {
+            display: flex;
+            border: 2px solid black;
+            height: 500px;
+            /* justify-content: center; */
+            /* align-items: flex-end; */
+            /* flex-direction: column;
+            align-items: center;
+            justify-content: center; */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: column nowrap; */
+            /* flex-wrap: wrap;
+            align-content: center; */
+        }
+
+        /* Flex Container Properties
+        1. justify-content
+        2. align-items
+        3. flex-direction
+        4. flex-wrap
+        5. flex-flow (Shorthand property to set flex-direction & flex-wrap)
+        6. align-content
+        */
+        /* Flex item Properties
+        1. align-self
+        2. order
+        3. flex-grow
+        4. flex-shrink
+        5. flex-basis
+        6. flex (Shorthand property to set flex-grow, flex-shrink & flex-basis)
+        */
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: lightcoral;
+            color: white;
+            font-size: 30px;
+            border: 2px solid black;
+        }
+
+        #box1 {
+            /* order: 200; */
+            /* align-self: end; */
+            /* flex-grow: 2; */
+            /* flex-shrink: 5; */
+            /* flex-basis: 400px; */
+            /* flex: 1 1 200px; */
+        }
+
+        #box2 {
+            /* order: 1; */
+        }
+
+        #box3 {
+            /* order: 10; */
+        }
+
+        #box4 {
+            /* order: 7; */
+        }
+
+        #box5 {
+            /* order: 100; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+        <div class="box" id="box5">5</div>
+    </div>
+</body>
+</html>
